@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: mynginx
+   labels:
+     env: Dev
+spec:
+   containers:
+   - image: nginx
+     name: democonatiner
+     ports:
+       - containerPort: 8080

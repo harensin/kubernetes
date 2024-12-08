@@ -1,0 +1,13 @@
+deployment.apps/nginx-deployment with revision #2
+Pod Template:
+  Labels:	app=nginx
+	pod-template-hash=7745d7cf5c
+  Containers:
+   nginx:
+    Image:	nginx
+    Port:	80/TCP
+    Host Port:	0/TCP
+    Environment:	<none>
+    Mounts:	<none>
+  Volumes:	<none>
+
