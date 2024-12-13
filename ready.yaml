@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: nginx
+ # namespace: probe-demo
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    readinessProbe:
+     exec:
+       command:
+       - cat 
+       - /tmp/healthy 

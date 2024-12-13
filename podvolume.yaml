@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: firstvolume
+spec:
+  containers:
+  - image: nginx
+    name: testvolume
+    volumeMounts:
+    - mountPath: /tmp/data
+      name: podvolume
+  volumes:
+   - name: podvolume
+     hostPath:
+       path: /Users/vandanasingh/Downloads/2025/project1/gitclone/kubernetes/test 
+#       type: Directory 
